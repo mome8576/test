@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "alias": "nextjs-template",
-  "name": "nextjs-template",
+  "alias": "hollo world",
+  "name": "hollo world",
   "builds": [
     { "src": "next.config.js", "use": "@now/next" }
   ]
