@@ -2,9 +2,40 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 const Card = styled.div`
-  width: 480px;
-  height: 640px;
-  border: solid 1px black;
+.logo {
+  margin-top: 50px;
+  margin-left: 0px;
+}
+.church-text {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 20px;
+  color: white;
+  text-align:center;
+}  
+.name-text {
+  font-size: 50px;  
+  letter-spacing: ??px;
+  text-indent: ??px;
+  color: white;
+  text-align:center;
+  margin-top:10px;
+}
+
+.ekk-image {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  }
+
+  .card {
+  position: relative;
+    width: 300px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: hsl(215, 62%, 21%);
+    overflow: hidden;
+  }
 `;
 
 const A = styled.a``;
@@ -25,10 +56,14 @@ const Wrapper = styled.div`
 
 const IndexPage = () => (
   <Wrapper>
-    <Card />
-    <Link href='/about' passHref>
-      <A>About Page</A>
-    </Link>
+    <Card >
+<div className='card'>
+   <img className='logo' src='/static/logo.svg' />
+  <p className='church-text'>新生命小組教會</p>
+  <p className='name-text'>吳孟禹</p>
+  <img className='ekk-image' src='/static/ekk.svg' />
+</div>
+</Card>
   </Wrapper>
 );
 
